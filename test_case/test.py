@@ -1,8 +1,14 @@
+import os
+
+import pytest
 import requests
 import json
 import yaml
+import allure
 
 class TestDemo:
+
+    @allure.feature('请求项目管理分页查询接口')
     def test_url(self):
         base_url = yaml.load(open("data.yaml"))["pangu_dev"]
         data = json.dumps({"pageCount": 20, "pageNumber": 1, "pageIs": True})
