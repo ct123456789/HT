@@ -2,7 +2,7 @@ import os
 import yaml
 
 
-class BaseReadFile:
+class HandleInit:
 
     def __init__(self, filePath):
         self.filePath = filePath
