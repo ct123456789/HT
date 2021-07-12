@@ -1,1 +1,3 @@
 pangu_dev: "http://pangu-dev.healthdt.cn"
+
+pangu_test: "http://pangu-test.healthdt.cn"

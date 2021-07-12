@@ -4,13 +4,10 @@ import yaml
 
 class HandleInit:
 
-    def __init__(self, filePath):
-        self.filePath = filePath
-
-    def readFile(self):
+    def readFile(self, filePath):
         # 获取当前文件的父目录的父目录
-        load = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+        current_load = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
         # 将路径拼接好
-        file = yaml.load(open(load+self.filePath))
+        file = yaml.load(open(current_load+filePath, encoding='UTF-8'))
         return file
 

@@ -34,10 +34,3 @@ class HandleDB(object):
         finally:
             cursor.close()
             cursor.close()
-
-
-
-
-if __name__ == '__main__':
-    b = baseLinkDataSource("172.20.1.114", "ht", "HTqazwsx123.", "ht_pangu")
-    b.linkDataSource("select * from dm_dic")
